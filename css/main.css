@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    width: 100%;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+}
+
+.content {
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.nav-content {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 48px;
+    font-size: 24px;  
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2E2E2E;
+}
+
+.logo {
+    display: inline;
+    float: left;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navs-container {
+    display: inline;
+    float: right;
+    padding: 10px;
+}
+
+.navs-container ul {
+    display:inline;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.navs-container li {
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar a {
+    color: #A3A3A3;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.navbar a:link, .navbar a:visited {
+    text-decoration: none;
+}
+
+.navbar a:hover, .navbar a:active {
+    color: #F5F5F5;
+    background-color: #080808;
+    text-decoration: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+.fa-angle-right {
+    display: none;
+}
+
+@media screen and (min-width: 900px) {
+    .content, .nav-content {
+        width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .navs-container {
+        display: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .navs-container.open {
+        display: inline;
+    }
+
+    .navs-container ul {
+        display: table;
+        width: 100%;
+    }
+
+    .navs-container li {
+        width: 100%;
+    }
+
+    .hamburger {
+        float: right;
+        display: inline;
+        height: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .hamburger .fa-bars {
+        display: inline;
+    }
+
+    .hamburger.open .fa-bars {
+        display: none;
+    }
+
+    .hamburger .fa-times {
+        display: none;
+    }
+
+    .hamburger.open .fa-times {
+        display: inline;
+    }
+
+    .fa-angle-right {
+        display: inline-block;
+        float: right;
+        margin-right: 32px;
+    }
+
+    .navs-container a {
+        display: block;
+        padding: 15px;
+        width: 100%;
+    }
+
+    .navs-container a:hover, .navs-container a:active {
+        color: #080808;
+        text-decoration: none;
+        background-color: inherit;
+    }
+
+    .navbar {
+        font-size: 32px;
+        height: 56px;
+    }
+}
