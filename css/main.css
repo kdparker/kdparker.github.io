@@ -91,10 +91,6 @@ body {
         width: 100%;
     }
 
-    .navs-container.open {
-        display: inline;
-    }
-
     .navs-container ul {
         display: table;
         width: 100%;
