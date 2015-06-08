@@ -77,7 +77,7 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-    .content, .nav-content {
+    .text-content, .nav-content {
         width: 900px;
         margin-left: auto;
         margin-right: auto;
@@ -101,26 +101,6 @@ body {
     }
 
     .hamburger {
-        float: right;
-        display: inline;
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .hamburger .fa-bars {
-        display: inline;
-    }
-
-    .hamburger.open .fa-bars {
-        display: none;
-    }
-
-    .hamburger .fa-times {
-        display: none;
-    }
-
-    .hamburger.open .fa-times {
         display: inline;
     }
 
@@ -145,5 +125,67 @@ body {
     .navbar {
         font-size: 32px;
         height: 56px;
+    }
+
+    .hamburger {
+        float: right;
+        position: relative;
+        height: 56px;
+        width: 56px;
+        padding: 0px;
+    }
+
+    .hamburger span {
+        margin: 0;
+        padding: 0;
+        display: block;
+        position: absolute;
+        width: 42px;
+        height: 6px;
+        background-color: #F5F5F5;
+        opacity: 1;
+        left: 8px;
+        -webkit-transition: .3s ease-in-out;
+        -moz-transition: .3s ease-in-out;
+        -o-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .hamburger a {
+        display: inline-block;
+        margin: 0;
+        padding: 28px;
+    }
+
+    .hamburger #line1 {
+        top: 6px;
+    }
+
+    .hamburger #line2 {
+        top: 24px;
+    }
+
+    .hamburger #line3 {
+        top: 42px;
+    }
+
+    .hamburger.open #line1 {
+        top: 24px;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+
+    .hamburger.open #line2 {
+        width: 0px;
+    }
+
+    .hamburger.open #line3 {
+        top: 24px;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
     }
 }
