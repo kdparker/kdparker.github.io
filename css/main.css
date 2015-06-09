@@ -128,11 +128,12 @@ body {
         display: block;
         padding: 15px;
         width: 100%;
+        background-color: #080808;
     }
 
     .navs-container a:hover, .navs-container a:active {
         text-decoration: none;
-        background-color: inherit;
+        background-color: #080808;
     }
 
     .navbar {
