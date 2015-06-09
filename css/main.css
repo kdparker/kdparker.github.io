@@ -16,8 +16,8 @@ body {
 }
 
 #trails {
-    position: absolute;
-    top: 48px;
+    position: relative;
+    top: 0px;
     left: 0px;
     z-index: -1;
     width: 100%;
@@ -25,6 +25,7 @@ body {
 }
 
 .navbar {
+    position: relative;
     width: 100%;
     height: 48px;
     font-size: 24px;  
@@ -105,7 +106,6 @@ body {
     }
 
     #trails {
-        top: 56px;
         width: 100%;
         height: calc(100% - 56px);
     }
@@ -128,12 +128,11 @@ body {
         display: block;
         padding: 15px;
         width: 100%;
-        background-color: #080808;
     }
 
     .navs-container a:hover, .navs-container a:active {
         text-decoration: none;
-        background-color: #080808;
+        color: #080808;
     }
 
     .navbar {
