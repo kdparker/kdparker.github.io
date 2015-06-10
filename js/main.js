@@ -1,6 +1,6 @@
 $().ready(function() {
 
-	const FPS = 60;
+	const FPS = 30;
 	const BACKGROUND_COLOR = "#080808";
 
 	var toggle_for_nav_click = function() {
@@ -35,7 +35,7 @@ $().ready(function() {
 		this.cur_pos = 0;
 		this.max_length = Math.floor((Math.random() * FPS / 2) + FPS / 2);
 		this.path = [];
-		this.speed = 5;
+		this.speed = Math.PI;
 		this.x = Math.random() * canvas_width;
 		this.fn = getRandomTrigFn();
 		this.y = this.fn(this.x);
@@ -78,7 +78,7 @@ $().ready(function() {
 
 	var generateTrails = function(canvas_width, canvas_height) {
 		var trails = [];
-		var num_trails = canvas_width / 30;
+		var num_trails = canvas_width / 5;
 
 		for (var i =0; i < num_trails; i++) {
 			trails.push(new Trail(canvas_width, canvas_height));
