@@ -5,6 +5,15 @@ body {
     transition: .3s ease all;
 }
 
+.heading {
+    width: 100%;
+    height: calc(100% - 48px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(8, 8, 8, 0.9);
+}
+
 .content {
     display: block;
     width: 100%;
@@ -91,9 +100,15 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .heading {
+        width: 900px;
+        left: calc((100% - 900px) / 2);
+    }
 }
 
 @media screen and (max-width: 650px) {
+
     .navs-container {
         display: none;
         padding: 0;
