@@ -5,15 +5,6 @@ body {
     transition: .3s ease all;
 }
 
-.heading {
-    width: 100%;
-    height: calc(100% - 48px);
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(8, 8, 8, 0.9);
-}
-
 .content {
     display: block;
     width: 100%;
@@ -24,22 +15,12 @@ body {
     width: 100%;
 }
 
-#trails {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    z-index: -1;
-    width: 100%;
-    height: calc(100% - 48px);
-}
-
 .navbar {
-    position: relative;
     width: 100%;
     height: 48px;
     font-size: 24px;  
     font-family: Arial, Helvetica, sans-serif;
-    background-color:  #080808;
+    background-color: #2E2E2E;
 }
 
 .logo {
@@ -83,6 +64,7 @@ body {
 
 .navbar a:hover, .navbar a:active {
     color: #F5F5F5;
+    background-color: #080808;
     text-decoration: none;
 }
 
@@ -100,15 +82,9 @@ body {
         margin-left: auto;
         margin-right: auto;
     }
-
-    .heading {
-        width: 900px;
-        left: calc((100% - 900px) / 2);
-    }
 }
 
 @media screen and (max-width: 650px) {
-
     .navs-container {
         display: none;
         padding: 0;
@@ -118,11 +94,6 @@ body {
     .navs-container ul {
         display: table;
         width: 100%;
-    }
-
-    #trails {
-        width: 100%;
-        height: calc(100% - 56px);
     }
 
     .navs-container li {
@@ -146,8 +117,9 @@ body {
     }
 
     .navs-container a:hover, .navs-container a:active {
-        text-decoration: none;
         color: #080808;
+        text-decoration: none;
+        background-color: inherit;
     }
 
     .navbar {
