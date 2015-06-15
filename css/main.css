@@ -1,6 +1,7 @@
 body {
     margin: 0;
     width: 100%;
+    font-family: Georgia, serif;
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
 }
@@ -21,6 +22,9 @@ body {
     font-size: 24px;  
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #080808;
+    -webkit-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
+    box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
 }
 
 .logo {
@@ -88,6 +92,9 @@ body {
         display: none;
         padding: 0;
         width: 100%;
+        -webkit-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
+        -moz-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
+        box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
     }
 
     .navs-container ul {
@@ -124,6 +131,12 @@ body {
     .navbar {
         font-size: 32px;
         height: 56px;
+    }
+
+    .navbar.open {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
     }
 
     .hamburger {
