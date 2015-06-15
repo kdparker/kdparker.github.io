@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    width: 100%;
     font-family: Georgia, serif;
     -webkit-transition: .3s ease all;
     transition: .3s ease all;
@@ -10,6 +9,31 @@ body {
     display: block;
     width: 100%;
     margin-top: 5px;
+}
+
+.flex {
+    display: -moz-flex;
+    -moz-flex-direction: row;
+
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+.flex > div {
+    display: inline-block;
+    flex-wrap: wrap;
+    -moz-flex: 1 1 auto;
+    -webkit-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.about {
+    padding-top: 15px;
 }
 
 .nav-content {
@@ -22,9 +46,9 @@ body {
     font-size: 24px;  
     font-family: 'Roboto Condensed', sans-serif;
     background-color: #080808;
-    -webkit-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
-    box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
 }
 
 .logo {
@@ -79,6 +103,35 @@ body {
     display: none;
 }
 
+#about-photo-container {
+    min-width: 50%;
+    max-width: 50%;
+}
+
+#about-photo {
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 360px;
+    max-padding-top: 360px;
+    border-radius: 50%;
+    overflow: hidden;
+    -webkit-box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.4);
+    -moz-box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.4);
+    box-shadow: 6px 6px 20px -5px rgba(0,0,0,0.4);
+}
+
+#intro {
+    width: 50%;
+}
+
+#hi {
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 60px;
+}
+
 @media screen and (min-width: 900px) {
     .content, .nav-content {
         width: 900px;
@@ -87,14 +140,14 @@ body {
     }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 580px) {
     .navs-container {
         display: none;
         padding: 0;
         width: 100%;
-        -webkit-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
-        -moz-box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
-        box-shadow: 0px 9px 8px 0px rgba(0,0,0,0.6);
+        -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
+        -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
+        box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.4);
     }
 
     .navs-container ul {
@@ -199,5 +252,19 @@ body {
         -moz-transform: rotate(45deg);
         -o-transform: rotate(45deg);
         transform: rotate(45deg);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    #about-photo-container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    #intro {
+        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
     }
 }

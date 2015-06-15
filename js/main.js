@@ -9,12 +9,12 @@ $().ready(function() {
 
 	// Hack to make sure everything is fixed on window resize (slideToggle affects html and overwrites the css)
 	$(window).on('resize', function() {
-		if ((!$(".navs-container").is(":visible")) && $(window).width() > 650) {
+		if ((!$(".navs-container").is(":visible")) && $(window).width() > 580) {
 			$(".navs-container").toggle();
 			$('.navbar').removeClass('open');
 		}
 
-		if ($(".navs-container").is(":visible") && $(window).width() <= 650) {
+		if ($(".navs-container").is(":visible") && $(window).width() <= 580) {
 			$(".hamburger").removeClass('open');
 			$('.navbar').removeClass('open');
 			$(".navs-container").css('display', "none");
