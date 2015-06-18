@@ -143,20 +143,24 @@ body {
 }
 
 .project-photo {
-    height: 300px;
-    width: calc((100% - 60) / 3);
-    max-width: calc((100% - 60) / 3);
-    min-width: calc((100% - 60) / 3);
+    width: calc((100% - 60px) / 3);
     -webkit-box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.4);
     -moz-box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.4);
     box-shadow: 0px 10px 8px -4px rgba(0,0,0,0.4);
-    background-size: contain;
-    background-repeat: no-repeat;
     margin-right: 30px;
 }
-.project-photo:last {
+
+.project-photo:last-child {
     margin-right: 0px;
 }
+
+source, img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
 
 .flex > .header {
     width: 100%;
@@ -167,10 +171,6 @@ body {
     padding-top: 30px;
     padding-bottom: 30px;
     font-family: 'Roboto Condensed', sans-serif;
-}
-
-#erbmagicleague-photo {
-    background-image: url(/images/erbmagicleague2.jpg);
 }
 
 @media screen and (min-width: 900px) {
@@ -307,11 +307,8 @@ body {
 
     .project-photo {
         width: 100%;
-        max-width: 100%;
-        min-width: 100%;
         margin-top: 30px;
         margin-bottom: 30px;
-        background-image: url(/images/erbmagicleague.jpg);
     }
 
     #intro {
