@@ -123,8 +123,9 @@ body {
 }
 
 #intro {
-    width: 50%;
+    width: calc(50% - 15px);
     font-size: 20px;
+    margin-left: 15px;
 }
 
 #hi {
@@ -348,6 +349,7 @@ source, img {
         width: 100%;
         max-width: 100%;
         min-width: 100%;
+        margin: 0px;
     }
 
     #hi {
