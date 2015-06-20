@@ -24,8 +24,8 @@
             --></div><!--
         --></div><!--
     --></nav>
-    <div class="content-container">
-        <div class="content first flex">
+    <div class="content-container" id="about-container">
+        <div class="content flex">
             <div class="circle-photo-container" id="about-photo-container">
                 <div class="circle-photo" id="about-photo">
                     <img src="/images/face.jpg" />
@@ -33,21 +33,33 @@
             </div>
             <div class="flex" id="intro">
                 <div id="hi">Hi.</div>
-                <div id="about">This site is currently under construction</div>
+                <div id="about"><p>I'm a Computer Science student at the University of Waterloo from Calgary. I'm about to go in to my 3A term starting in September.</p> 
+                <p>I'm currently on my coop term working at <a href="http://hubdoc.com/">Hubdoc</a>, an awesome Toronto startup trying to make the world paperless.</p>
+                <p>You can see my projects down below. They're all open-source, so check out the source code if you'd like.</p>
+                <p>You can contact me by e-mail at <a href="mailto:keegandparker@gmail.com">KeeganDParker@gmail.com</a>, or at any of the other networks I have listed in the nav bar.</p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="content-container">
-        <div class="content second flex">
+    <div class="content-container" id="projects-container">
+        <div class="content flex">
             <div class="header" id="project">Projects</div>
             <div class="project-photo">
-                <div class="project-hover"></div>
                 <picture>
                     <source media="(max-width: 680px)" srcset="/images/erbmagicleague.jpg" />
                     <source srcset="/images/erbmagicleague2.jpg" />
                     <img src="/images/erbmagicleague2.jpg" />
                 </picture>
+                <div class="project-hover">
+                    <div class="hover-content">
+                    <h2>Erb Magic League</h2>
+                    <p>A website written in Python with Django, deployed with Heroku.</p> 
+                    <p>Served as the homepage for the Magic: The Gathering league I ran in my house. It featured the ability for players to report matches to get placement on an elo based ladder system, as well as a basic trading system.</p>
+                    <a href="https://github.com/kdparker"><i class="fa fa-github"></i></a>
+                    <a href="http://erbmagicleague.herokuapp.com/"><i class="fa fa-globe"></i></a>
+                    </div>
+                </div>
             </div>
             <div class="project-photo">
                 <div class="project-hover"></div>
