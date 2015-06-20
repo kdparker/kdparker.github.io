@@ -336,7 +336,7 @@ source, img {
         width: 100%;
         margin-top: 30px;
         margin-bottom: 30px;
-        margin-right: 10;
+        margin-right: 0px;
     }
 
     .project-hover {
