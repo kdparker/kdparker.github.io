@@ -23,8 +23,8 @@ $(document).ready(function () {
     });
 
     $(".project-photo").hover(function () {
-        $(this).find('.project-hover').addClass('mouseover');
+        $(this).find('.project-info').addClass('mouseover');
     }, function () {
-        $(this).find('.project-hover').removeClass('mouseover');
+        $(this).find('.project-info').removeClass('mouseover');
     });
 });
