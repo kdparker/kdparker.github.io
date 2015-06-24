@@ -15,7 +15,7 @@ body {
     margin: 10px;
     color: white;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .info-content p {
@@ -415,6 +415,14 @@ source, img {
         max-width: 100%;
         min-width: 100%;
         margin: 0px;
+    }
+
+    #erb-info {
+        margin-top: 8%;
+    }
+
+    #rusty-info {
+        margin-top: 30%;
     }
 
     .project-photo {
