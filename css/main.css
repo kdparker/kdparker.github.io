@@ -5,8 +5,9 @@ body {
     transition: .3s ease all;
 }
 
-#about-container {
-    background-color: #f5f5f5;
+.content-container:nth-of-type(2) {
+    background-color: #080808;
+    color: white;
 }
 
 .info-content {
@@ -190,16 +191,22 @@ h1, h2, h3 {
 .articles-list a {
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 30px;
-    color: #080808;
 }
 
-.articles-list a:link, .articles-list a:visited {
+p a:link, p a:visited, p a:hover, p a:active {
+    text-decoration: underline;
+}
+
+a {
+    color: inherit;
+}
+
+a:link, a:visited, a:hover, a:active {
     text-decoration: none;
 }
 
 .articles-list a:hover, .articles-list a:active {
     border-bottom: solid 1px #080808;
-    text-decoration: none;
 }
 
 .project-photo {
@@ -269,6 +276,28 @@ source, img {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+.post-title {
+    width: 100%;
+    font-size: 48px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-bottom: 0;
+}
+
+.post-date {
+    width: 100%;
+    color: #A3A3A3;
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.article-content {
+    width: 100%;
+    line-height: 33px;
+    font-size: 22px;
+    word-wrap: break-word;
+}
+
+
 @media screen and (min-width: 1310px) {
     .content, .nav-content {
         width: 1280px;
@@ -286,10 +315,42 @@ source, img {
         margin-left: 10px;
         margin-right: 10px;
     }
+
+    .post-title {
+        font-size: 60px;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .article-content {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .post-title {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .post-date {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media screen and (max-width: 615px) {
     .articles-list a {
+        font-size: 16px;
+    }
+
+    .post-title {
+        font-size: 30px;
+    }
+
+    .post-date {
         font-size: 16px;
     }
 
@@ -336,7 +397,6 @@ source, img {
     }
 
     .navbar {
-        font-size: 32px;
         height: 56px;
     }
 
@@ -408,6 +468,8 @@ source, img {
         transform: rotate(45deg);
     }
 }
+
+
 
 @media screen and (max-width: 920px) {
     .project-photo {
