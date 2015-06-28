@@ -1,0 +1,19 @@
+---
+layout: default
+title: Keegan Parker
+---
+<div class="content-container" style="display:none"></div> <!---To get rid of 2nd child check !-->
+
+<div class="content-container" id="list-container">
+	<div class="content">
+		<div class="header" id="articles">Articles</div>
+		<ul class="articles-list">
+	        {% for post in site.posts %}
+	          <li>
+	            <a href="{{ post.url }}">{{ post.title }}</a><br>
+	            <span class="post-date">{{ post.date | date_to_long_string }}</span>
+	          </li>
+	        {% endfor %}
+	    </ul>
+	</div>
+</div>
