@@ -187,7 +187,7 @@ body {
 
 #intro {
     width: calc(60% - 15px);
-    font-size: 24px;
+    font-size: 20px;
     margin-left: 15px;
 }
 
@@ -227,7 +227,7 @@ body {
     text-decoration: underline;
 }
 
-p a:link, p a:visited, p a:hover, p a:active {
+p a, p a:link, p a:visited, p a:hover, p a:active {
     text-decoration: underline;
     color: rgb(102, 217, 239);
 }
@@ -538,9 +538,14 @@ source, img {
     }
 
     #intro {
-        width: 100%;
-        max-width: 100%;
-        min-width: 100%;
+        width: calc(100% - 15px);
+        margin: 0px;
+    }
+
+    #about {
+        width: calc(100% - 15px);
+        min-width: calc(100% - 15px);
+        max-width: calc(100% - 15px);
         margin: 0px;
     }
 
