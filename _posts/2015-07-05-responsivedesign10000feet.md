@@ -75,16 +75,16 @@ flex {
 
     display: flex;
     flex-direction: row;
-
-    flex-wrap: wrap;
 }
 
 .flex > div {
-    display: inline-block;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
     flex-wrap: wrap;
+
     -moz-flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
-
     flex: 1 1 auto;
 }
 {% endhighlight %}
