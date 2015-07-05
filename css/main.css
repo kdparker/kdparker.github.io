@@ -126,13 +126,16 @@ body {
 
     display: flex;
     flex-direction: row;
+
+    -webkit-flex-wrap: wrap; /* Safari 6.1+ */
+    flex-wrap: wrap;
 }
 
 .flex > div {
+    display: inline-block;
+
     -webkit-flex-wrap: wrap; /* Safari 6.1+ */
     flex-wrap: wrap;
-
-    display: inline-block;
 
     -moz-flex: 1 1 auto;
     -webkit-flex: 1 1 auto;
