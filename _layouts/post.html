@@ -1,4 +1,6 @@
 {% include header.html %}
+<link rel="stylesheet" href="{{ site.url }}/css/pygments.css" type='text/css'>
+{% include navbar.html %}
 <div class="content-container"><div class="content"><div class="post-title">{{ page.title }}</div>
 <div class="post-date">{{ page.date | date_to_long_string }}</div></div></div>
 <div class="content-container" id="post-container"><div class="content"><div class="article-content">{{ content }}</div></div></div>

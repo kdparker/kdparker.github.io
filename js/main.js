@@ -5,13 +5,11 @@ $(document).ready(function () {
     hamburger.on('click', function () {
         $(".navs-container").slideToggle();
         $(".hamburger").toggleClass('open');
-        $('.navbar').toggleClass('open');
     });
 
     function closeHamburgerIfOpen() {
         if ($(".navs-container").is(":visible") && $(window).width() <= 670) {
             $(".hamburger").removeClass('open');
-            $('.navbar').removeClass('open');
             $(".navs-container").css('display', "none");
         }
     }
@@ -20,7 +18,6 @@ $(document).ready(function () {
     $(window).on('resize', function () {
         if ((!$(".navs-container").is(":visible")) && $(window).width() > 670) {
             $(".navs-container").toggle();
-            $('.navbar').removeClass('open');
         }
 
         closeHamburgerIfOpen();
