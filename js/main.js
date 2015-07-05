@@ -9,7 +9,7 @@ $(document).ready(function () {
     });
 
     function closeHamburgerIfOpen() {
-        if ($(".navs-container").is(":visible") && $(window).width() <= 615) {
+        if ($(".navs-container").is(":visible") && $(window).width() <= 670) {
             $(".hamburger").removeClass('open');
             $('.navbar').removeClass('open');
             $(".navs-container").css('display', "none");
@@ -18,7 +18,7 @@ $(document).ready(function () {
 
     // Hack to make sure everything is fixed on window resize (slideToggle affects html and overwrites the css)
     $(window).on('resize', function () {
-        if ((!$(".navs-container").is(":visible")) && $(window).width() > 615) {
+        if ((!$(".navs-container").is(":visible")) && $(window).width() > 670) {
             $(".navs-container").toggle();
             $('.navbar').removeClass('open');
         }
