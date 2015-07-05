@@ -66,21 +66,24 @@ Another notable attribute is orientation, but I haven't found any particularly i
 {% endhighlight %}
 
 {% highlight css %}
-flex {
-    /* Vendor specific implementations */
+.flex {
     display: -moz-flex;
     -moz-flex-direction: row;
+
     display: -webkit-flex;
     -webkit-flex-direction: row;
 
     display: flex;
     flex-direction: row;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
 }
 
 .flex > div {
-    display: -webkit-flex;
+    display: inline-block;
+
     -webkit-flex-wrap: wrap;
-    display: flex;
     flex-wrap: wrap;
 
     -moz-flex: 1 1 auto;
